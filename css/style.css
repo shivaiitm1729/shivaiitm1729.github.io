@@ -104,12 +104,11 @@ code {
 }
 
 .profile-photo-home {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    border: 4px solid #f7b731;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: auto;     /* or a fixed width like 300px */
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: none;
 }
 
 .name-affiliation {
