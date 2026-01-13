@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dam and Levee breach flows - Shivakumar Balachandran</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../conferences.html">Conferences</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-post-full">
+            <div class="post-header">
+                <h1>Numerical and Machine Learning Models for dams and levee breach flows</h1>
+                <div class="post-meta">
+                    <p class="post-author">Shivakumar Balachandran, and  Jasim Imran</p>
+                    <p class="project-status">Status: Active | NOAA & NSF</p>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <p class="lead">
+                    Smart NINT: A machine learning approach that emulates interactive atmospheric composition in Earth System Models, reducing computational costs while maintaining real-time feedback between aerosols and climate processes.
+                </p>
+
+                <h2>Problem Statement</h2>
+                <p style="text-align: justify;">
+                    Interactive composition simulations in Earth System Models (ESMs) are computationally expensive as they transport numerous gaseous and aerosol tracers at each timestep. This limits higher-resolution transient climate simulations with current computational resources. ESMs like NASA GISS-ModelE3 (ModelE) often use pre-computed monthly-averaged atmospheric composition concentrations (Non-Interactive Tracers or NINT) to reduce computational costs. While NINT significantly cuts computations, it fails to capture real-time feedback between aerosols and other climate processes by relying on pre-calculated fields.
+                </p>
+
+                <h2>Proposed Solution</h2>
+                <p style="text-align: justify;">
+                    We extended the ModelE NINT version using machine learning (ML) to create <strong>Smart NINT</strong>, which emulates interactive emissions. Smart NINT interactively calculates concentrations using ML with surface emissions and meteorological data as inputs, avoiding full physics parameterizations. Our approach utilizes a spatiotemporal ML architecture that possesses a well-matched inductive bias to effectively capture the spatial and temporal dependencies in tracer evolution. Input data processed through the first 20 vertical levels (up to 656 hPa) using the ModelE OMA scheme. This vertical range covers nearly the entire BCB concentration distribution in the troposphere.
+                </p>
+
+                <h2>Tools & Techniques</h2>
+                <ul>
+                    <li>Spatiotemporal machine learning architecture designed for tracer evolution</li>
+                    <li>Integration with NASA GISS ModelE3 framework for seamless operation using FTorch</li>
+                </ul>
+
+                <h2>Research Team & Collaborations</h2>
+                <div class="project-details">
+                    <div class="contributors-section">
+                        <h3>Contributors</h3>
+                            <ul class="contributors-list">
+                                <li>
+                                    <strong>Mohammad Erfani</strong><br>
+                                    <span class="project-role">Graduate Research Assistant, Numerical and Machine Learning Models</span>
+                                </li>
+                                <li>
+                                    <strong>Jasim Imran</strong><br>
+                                    <span class="project-role">Principal Investigator</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="agencies-section">
+                            <h3>Agencies & Institutions</h3>
+                            <ul class="agencies-list">
+                                <li>NASA Goddard Institute for Space Studies (GISS)</li>
+                                <li>Columbia University, Center for Climate Systems Research (CCSR)</li>
+                                <li>Columbia University, Department of Earth and Environmental Engineering</li>
+                                <li>Columbia University, Learning the Earth with Artificial Intelligence & Physics (LEAP)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+            <div class="post-footer">
+                <a href="../projects.html" class="back-to-blog">← Back to Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shivakumar Balachandran. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
