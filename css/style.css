@@ -104,13 +104,13 @@ code {
 }
 
 .profile-photo-home {
-  width: auto;     /* or a fixed width like 300px */
+  display: block;
+  width: 220px;          /*controls size — adjust if needed */
+  height: auto;          /* keeps aspect ratio */
   max-width: 100%;
-  height: auto;
-  border-radius: 0;
-  object-fit: none;
+  border-radius: 0;      /* rectangular */
+  object-fit: contain;  /* show full image, no crop */
 }
-
 .name-affiliation {
     flex: 1;
     padding-top: 10px;
